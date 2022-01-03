@@ -1,0 +1,18 @@
+server:
+  port: 9000
+
+http:
+  apikey:
+    acquirer: ~
+  client:
+    connectionTimeout: 20_000
+    requestTimeout:    20_000
+    socketTimeout:     30_000
+    maxConnections:    30
+    defaultKeepAlive: 20_000
+    idleTimeSecs:     30
+
+---
+spring:
+  profiles:
+    active: dev
