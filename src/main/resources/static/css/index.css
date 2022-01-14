@@ -1,0 +1,77 @@
+body {
+    display        : flex;
+    flex-direction : column;
+    align-self     : start;
+    justify-content: center;
+    min-height     : 100vh;
+    text-align     : center;
+}
+
+h1 {
+    font-size    : 2rem;
+    margin-bottom: 0;
+}
+
+img {
+    width    : 30vw;
+    min-width: 100px;
+    max-width: 200px;
+}
+
+.logotext-1 {
+    color: #41c0f3;
+}
+
+.logotext-2 {
+    color: #233c91;
+}
+
+.paymentform {
+    margin   : 20px auto;
+    width    : 70vw;
+    min-width: 400px;
+}
+
+.formGroup {
+    display              : grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom        : 20px;
+    width                : 100%;
+}
+
+.innerGroup {
+    flex-direction: column;
+    margin        : 10px 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    display      : block;
+    min-width    : 200px;
+    width        : 25vw;
+    height       : 25px;
+    margin       : 5px auto 10px;
+    border-radius: 5px;
+    font-size    : 1rem;
+}
+
+.inline {
+    display        : flex;
+    flex-direction : row;
+    align-content  : center;
+    justify-content: flex-start;
+}
+
+.confirmBtn {
+    width           : 128px;
+    height          : 36px;
+    margin-top      : 30px;
+    letter-spacing  : 0.1rem;
+    font-size       : 1rem;
+    background-color: #e68224;
+    font-weight     : bold;
+    color           : white;
+}
