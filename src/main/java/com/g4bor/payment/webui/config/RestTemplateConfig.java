@@ -1,5 +1,6 @@
 package com.g4bor.payment.webui.config;
 
+import com.g4bor.payment.webui.config.client.HttpClientConfiguration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

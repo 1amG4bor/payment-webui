@@ -1,5 +1,7 @@
-package com.g4bor.payment.webui.config;
+package com.g4bor.payment.webui.config.client;
 
+import com.g4bor.payment.webui.config.client.BaseHttpClientConfig;
+import com.g4bor.payment.webui.config.client.HttpClientConfiguration;
 import okhttp3.ConnectionPool;
 import okhttp3.OkHttpClient;
 import org.springframework.context.annotation.Profile;

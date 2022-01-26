@@ -1,21 +1,30 @@
-server:
-  port: 9000
+server.port: 9000
 
 http:
   apikey:
-    acquirer: ~
+    acquirer: 4e5622b2-4fb5-429a-ab0c-efadcbb28b8e
   client:
-    connectionTimeout: 20_000
-    requestTimeout:    20_000
-    socketTimeout:     30_000
-    maxConnections:    30
-    defaultKeepAlive: 20_000
-    idleTimeSecs:     30
+    connectionTimeout:  20_000
+    requestTimeout:     20_000
+    socketTimeout:      30_000
+    maxConnections:     30
+    defaultKeepAlive:   20_000
+    idleTimeSecs:       30
 
----
 spring:
-  profiles:
-    active: dev
-  devtools:
-    livereload:
+  profiles.active: dev
+  datasource:
+    url: 'jdbc:h2:mem:userdb;DB_CLOSE_DELAY=-1'
+    driverClassName: org.h2.Driver
+    username: admin
+    password: admin
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+    open-in-view: false
+  h2:
+    console:
+      path: /h2
       enabled: true
+  devtools:
+    livereload.enabled: false

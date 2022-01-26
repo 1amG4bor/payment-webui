@@ -1,4 +1,4 @@
-package com.g4bor.payment.webui.config;
+package com.g4bor.payment.webui.config.client;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;

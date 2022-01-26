@@ -1,4 +1,4 @@
-package com.g4bor.payment.webui.config;
+package com.g4bor.payment.webui.config.client;
 
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.conn.ConnectionKeepAliveStrategy;
