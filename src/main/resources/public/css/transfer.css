@@ -12,8 +12,8 @@ h1 {
     margin-bottom: 0;
 }
 
-img {
-    width    : 30vw;
+#logo {
+    width    : 40vw;
     min-width: 100px;
     max-width: 200px;
 }

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
     <title>Payment WebUI - login</title>
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/login.css" type="text/css">
 </head>
 
 <body>
@@ -15,11 +15,12 @@
         <span class="logotext-2">Pay</span>
     </h1>
     <h3>Fast, secure, and worldwide payment method</h3>
-    <img src="imgs/logo.jpg" alt="logo">
+    <img id="logo" src="imgs/logo.jpg" alt="logo">
 </header>
 
 <div class="loginform">
-    <form action="login.html" method="post">
+    <form action="/user/login" method="post">
+        <div th:if="${(param.error != null) and (param.error[0] == 'true')}" id="from-error">Invalid username and/or password!</div>
         <label for="username">Username</label>
         <input type="text" name="username" id="username">
         <label for="password">Password</label>

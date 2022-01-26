@@ -2,6 +2,8 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=java,intellij
 
 ### Intellij ###
+.idea/**
+
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
@@ -102,6 +104,7 @@ fabric.properties
 *.log
 
 # Package Files #
+target/**
 *.jar
 *.war
 *.nar
@@ -109,6 +112,7 @@ fabric.properties
 *.zip
 *.tar.gz
 *.rar
+
 
 ### Others ###
 .env

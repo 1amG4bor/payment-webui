@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Payment WebUI</title>
+    <link rel="stylesheet" href="css/transfer.css" type="text/css">
+</head>
+
+<body>
+<header class="header">
+    <h1>
+        <span class="logotext-1">Prompt</span>
+        <span class="logotext-2">Pay</span>
+    </h1>
+    <img id="logo" src="imgs/logo.jpg" alt="logo">
+</header>
+
+<h2>Transfer</h2>
+<form action="send" method="post" class="paymentform">
+    <fieldset class="formGroup">
+        <legend>Sender</legend>
+        <div class="innerGroup">
+            <label for="debitAccount">Debit account</label>
+            <input type="text" name="debitAccount" id="debitAccount" required>
+        </div>
+    </fieldset>
+
+    <fieldset class="formGroup">
+        <legend>Reciever</legend>
+        <div class="innerGroup">
+            <label for="recipient">Name recipient</label>
+            <input type="text" name="recipient" id="recipient" required>
+        </div>
+
+        <div class="innerGroup">
+            <label for="recieverAccountNumber">Account number</label>
+            <input type="text" name="recieverAccountNumber" id="recieverAccountNumber" maxlength="26"
+                   pattern="[0-9]+" oninput="accountNumberFormatter(event)" required />
+
+        </div>
+
+        <div class="innerGroup">
+            <label for="paymentReference">Payment reference</label>
+            <input type="text" name="paymentReference" id="paymentReference">
+        </div>
+
+        <div class="innerGroup">
+            <label for="message">Message</label>
+            <input type="text" name="message" id="message">
+        </div>
+
+        <div class="innerGroup">
+            <label for="description">Description</label>
+            <input type="text" name="description" id="description">
+        </div>
+    </fieldset>
+
+    <input type="submit" value="Confirm" class="confirmBtn">
+</form>
+
+<script src="js/transfer.js"></script>
+</body>
+
+</html>

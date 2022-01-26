@@ -1,0 +1,53 @@
+body {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    min-height     : 100vh;
+    text-align     : center;
+    margin: 0;
+}
+
+h1 {
+    font-size    : 4rem;
+    margin-bottom: 0;
+}
+
+
+h3 {
+    margin-top: 10px;
+}
+
+#logo {
+    min-width: 250px;
+    max-width: 500px;
+    width    : 20vw;
+}
+
+.logotext-1 {
+    color: #41c0f3;
+}
+
+.logotext-2 {
+    color: #233c91;
+}
+
+p {
+    width: 50vw;
+    font-size: 1.1rem;
+    margin: 0 auto;
+}
+
+button {
+    height          : 42px;
+    margin-top      : 30px;
+    letter-spacing  : 0.2rem;
+    font-size       : 1.3rem;
+    background-color: #41c0f3;
+    font-weight     : 600;
+    color           : #233b91;
+}
+
+button:hover {
+    color: white;
+    background-color: #29c829;
+}

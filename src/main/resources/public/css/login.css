@@ -16,10 +16,10 @@ h3 {
     margin-top: 10px;
 }
 
-img {
+#logo {
     min-width: 250px;
     max-width: 500px;
-    width    : 50vw;
+    width    : 30vw;
 }
 
 .logotext-1 {
@@ -56,4 +56,12 @@ input {
     background-color: #2EB163;
     font-weight     : bold;
     color           : white;
+}
+
+#from-error {
+   background-color : #ff5050;
+   color            : white;
+   padding          : 10px;
+   margin           : 20px auto;
+   width            : 40vw;
 }
